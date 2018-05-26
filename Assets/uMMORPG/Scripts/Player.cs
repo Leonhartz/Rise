@@ -328,7 +328,8 @@ public partial class Player : Entity {
 
     public override void OnStartLocalPlayer() {
         // setup camera targets
-        Camera.main.GetComponent<CameraMMO>().target = transform;
+//        Camera.main.GetComponent<CameraMMO>().target = transform;
+
         GameObject.FindWithTag("MinimapCamera").GetComponent<CopyPosition>().target = transform;
 
         // load skillbar after player data was loaded
